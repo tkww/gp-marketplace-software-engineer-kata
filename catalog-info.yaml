@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gp-marketplace-software-engineer-kata
+  annotations:
+    github.com/project-slug: tkww/gp-marketplace-software-engineer-kata
+  tags:
+    - tooling
+    - php
+    - onboarding
+spec:
+  type: website
+  lifecycle: production
+  owner: gp-marketplace
+  system: developer-portal
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: developer-portal
+spec:
+  owner: gp-marketplace
+  lifecycle: production
